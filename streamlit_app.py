@@ -3,7 +3,6 @@ import streamlit as st
 import google.generativeai as genai
 import textwrap
 import random
-from wordcloud import WordCloud
 import streamlit.components.v1 as components
 
 genai.configure(api_key="AIzaSyDlBFVsmV8pao6Ax-bcR0dc5h4CusiNCsc")
@@ -32,10 +31,6 @@ if st.button("Generate Outline"):
         random_topics = ["Artificial Intelligence", "Space Exploration", "Healthy Eating", "Cryptocurrency", "Climate Change"]
         random_topic = random.choice(random_topics)
         st.markdown(f"**Random Topic Suggestion:** {random_topic}")
-
-        st.markdown("**Word Cloud:**")
-        wordcloud = WordCloud().generate(outline)
-        st.image(wordcloud.to_image())
 
         st.markdown("**Collapsible Sections:**")
         for i, paragraph in enumerate(outline.split("\n\n")):
