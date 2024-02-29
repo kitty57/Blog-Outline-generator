@@ -24,7 +24,6 @@ def create_collapsible_section(title, content):
 
 st.set_page_config(layout="wide")  
 st.title("Blog Outline Generator")
-st.sidebar.image("✍🏻", width=200)  
 st.sidebar.title("Random Topic Generator")
 
 st.write("")
