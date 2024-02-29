@@ -4,7 +4,7 @@ import google.generativeai as genai
 from wordcloud import WordCloud
 
 # Configure GenerativeAI model
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="AIzaSyDlBFVsmV8pao6Ax-bcR0dc5h4CusiNCsc")
 model = genai.GenerativeModel(model_name="gemini-pro")
 
 # Function to generate blog outline
