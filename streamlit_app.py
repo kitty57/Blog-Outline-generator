@@ -47,9 +47,3 @@ with col2:
         random_topic = random.choice(random_topics)
         st.sidebar.write(f"Suggested Topic: {random_topic}")
 
-footer = """
-<div style="background-color:#f8f9fa;padding:10px;border-radius:5px;text-align:center;">
-    <p style="color:#6c757d;">Powered by GenerativeAI and Streamlit</p>
-</div>
-"""
-st.markdown(footer, unsafe_allow_html=True)
