@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit as st
-from google.generativeai as genai
+import google.generativeai as genai
 from IPython.display import Markdown
 import textwrap
 
