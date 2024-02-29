@@ -1,11 +1,11 @@
 import streamlit as st
 import streamlit as st
-from google.generativeai import GenerativeModel
+from google.generativeai as genai
 from IPython.display import Markdown
 import textwrap
 
 genai.configure(api_key="AIzaSyDlBFVsmV8pao6Ax-bcR0dc5h4CusiNCsc")
-model = GenerativeModel(model_name="gemini-pro")
+model = genai.GenerativeModel(model_name="gemini-pro")
 
 def to_markdown(text):
     text = text.replace('•', '  *')
