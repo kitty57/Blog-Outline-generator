@@ -28,13 +28,13 @@ if st.button("Generate Outline"):
         st.markdown("**Generated Outline:**")
         st.write(outline)
 
-        random_topics = ["Artificial Intelligence", "Space Exploration", "Healthy Eating", "Cryptocurrency", "Climate Change"]
-        random_topic = random.choice(random_topics)
-        st.markdown(f"**Random Topic Suggestion:** {random_topic}")
-
         st.markdown("**Collapsible Sections:**")
         for i, paragraph in enumerate(outline.split("\n\n")):
             st.markdown(create_collapsible_section(f"Paragraph {i+1}", paragraph), unsafe_allow_html=True)
     else:
         st.warning("Please enter a topic.")
+if st.button("Generate Random Topic"):
+    random_topics = ["Artificial Intelligence", "Space Exploration", "Healthy Eating", "Cryptocurrency", "Climate Change"]
+    random_topic = random.choice(random_topics)
+    st.write(f"Suggested Topic: {random_topic}")
 
